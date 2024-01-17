@@ -20,7 +20,7 @@ const str2Links = (str: string): string => {
 
 /**
  * getObjKeys
- * オブジェクトのkeyを配列として取得
+ * オブジェクトのkeyを配列として取得する関数
  * */
 const getObjKeys = (obj: ObjType) => {
   return Object.keys(obj);
