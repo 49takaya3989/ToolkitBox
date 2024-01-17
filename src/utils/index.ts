@@ -17,3 +17,14 @@ const str2Links = (str: string): string => {
   // URLにマッチする部分をリンクに置換
   return str.replace(urlPattern, (url) => `<a href="${url}">${url}</a>`);
 }
+
+/**
+ * getObjKeys
+ * オブジェクトのkeyを配列として取得
+ * */
+const getObjKeys = (obj: ObjType) => {
+  return Object.keys(obj);
+}
+type ObjType = {
+  [key: string]: unknown
+}
