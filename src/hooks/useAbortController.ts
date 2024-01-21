@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 
 /**
  * useAbortSignal
- * コンポーネントのアンマウント時に fetch をキャンセルする関数
+ * コンポーネントのアンマウント時に fetch をキャンセルするhooks
  */
 export const useAbortSignal = (): AbortSignal => {
   const abortController = useRef(new AbortController());
