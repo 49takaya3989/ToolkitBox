@@ -2,22 +2,21 @@ import { useEffect } from 'react';
 import { useAbortSignal } from './hooks/useAbortController';
 
 const Component = () => {
-  const abortSignalOne = useAbortSignal();
-  const abortSignalTwo = useAbortSignal();
+  const abortSignal = useAbortSignal();
 
   // 最初のAPIリクエスト
   useEffect(() => {
-    fetch('https://api-endpoint-one.com', { signal: abortSignalOne })
+    fetch('https://api-endpoint-one.com', { signal: abortSignal })
       .then(res => { /* 省略 */ })
       .catch(err => { /* 省略 */ });
-  }, [abortSignalOne]);
+  }, [abortSignal]);
 
   // 二つ目のAPIリクエスト
   useEffect(() => {
-    fetch('https://api-endpoint-two.com', { signal: abortSignalOne })
+    fetch('https://api-endpoint-two.com', { signal: abortSignal })
       .then(res => { /* 省略 */ })
       .catch(err => { /* 省略 */ });
-  }, [abortSignalTwo]);
+  }, [abortSignal]);
 
   return <div>Component</div>;
 };
