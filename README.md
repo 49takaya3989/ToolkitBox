@@ -5,7 +5,7 @@
 
 オブジェクトのkeyを配列として取得する関数：[getObjKeys](https://github.com/49takaya3989/toolkit_box/blob/main/src/utils/index.ts#L21-L30)
 
-文字列の配列から { K: "K" } のオブジェクトを作成する関数：[createObjectFromKeys](https://github.com/49takaya3989/toolkit_box/blob/main/src/utils/index.ts#L21-L30)
+文字列の配列から { K: "K" } のオブジェクトを作成する関数：[createObjectFromKeys](https://github.com/49takaya3989/toolkit_box/blob/main/src/utils/index.ts#L32-L39)
 
 # Hooks
 コンポーネントのアンマウント時に fetch をキャンセルするhooks：[useAbortSignal](https://github.com/49takaya3989/toolkit_box/blob/main/src/hooks/useAbortController.ts#L3-L18)
